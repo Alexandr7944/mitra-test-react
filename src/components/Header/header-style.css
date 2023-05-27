@@ -1,0 +1,66 @@
+@import url('../../App.css');
+
+.header {
+  padding: 15px 0;
+  position: relative;
+}
+
+.menu-btn {
+  width: 50px;
+  height: 50px;
+  box-shadow: var(--shadow);
+  border-radius: 10px;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.menu-btn>.row {
+  display: block;
+  width: 25px;
+  height: 4px;
+  background-color: #9c9c9c;
+
+  border-radius: 5px;
+}
+
+.menu {
+  position: absolute;
+  width: 250px;
+  left: -5px;
+  top: 100px;
+  padding: 20px 15px;
+  background-color: var(--bodyColor);
+  box-shadow: var(--shadow);
+  border-radius: 5px 15px 15px 5px;
+  z-index: 10;
+
+  transform: translateY(-50px);
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+
+  display: flex;
+  flex-direction: column;
+
+}
+
+.menu-open {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu__photo {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  
+  align-self: center;
+  margin: 50px 0;
+  border-radius: 50%;
+}

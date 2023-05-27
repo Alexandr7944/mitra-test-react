@@ -1,0 +1,94 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --shadow: 2px 3px 8px rgba(0, 0, 0, .4), 
+        inset 2px 4px 4px rgba(255, 255, 255, .4),
+        inset -2px -3px 8px rgba(0, 0, 0, .4);
+  --bodyColor: rgb(241, 241, 241);
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  background-color: var(--bodyColor);
+}
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.back {
+  color: #5a5858;
+  cursor: pointer;
+}
+
+.post {
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 15px;
+
+  box-shadow: var(--shadow)
+}
+
+.post:last-child {
+  margin-bottom: 0;
+}
+
+.post__wrapper {
+  display: flex;
+  gap: 15px;
+}
+
+@media (max-width: 500px) {
+  .post__wrapper {
+    flex-direction: column;
+  }
+}
+
+.post__image {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.post__content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.post__comments {
+  align-self: start;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+
+  box-shadow: var(--shadow);
+  border: none;
+}
+
+.comments {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.comment {
+  padding: 15px;
+  box-shadow: var(--shadow);
+}
+
+.person {
+  padding: 15px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}

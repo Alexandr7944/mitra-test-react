@@ -1,7 +1,6 @@
 import './App.css';
 import About from './pages/About/About';
 import Header from './components/Header/Header';
-import Navbar from './components/Navbar/Navbar';
 import PostPage from './pages/PostPage';
 import Posts from './pages/Posts';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -12,9 +11,9 @@ function App() {
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route path="/posts" element={<Posts/>} />
-        <Route path="/posts/:userId" element={<PostPage />} />
-        <Route path="/about" element={<About/>} />
+        <Route path="/mitra-test-react/posts" element={<Posts/>} />
+        <Route path="/mitra-test-react/posts/:userId" element={<PostPage />} />
+        <Route path="/mitra-test-react/about" element={<About/>} />
         <Route path="/*" element={<Posts/>} />
       </Routes>
     </BrowserRouter>

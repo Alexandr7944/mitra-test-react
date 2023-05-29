@@ -11,13 +11,22 @@
   --bodyColor: rgb(241, 241, 241);
 }
 
+body {
+  background-color: var(--bodyColor);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+}
+
 li {
   list-style: none;
 }
 
-body {
-  background-color: var(--bodyColor);
-}
 .container {
   width: 100%;
   max-width: 1100px;

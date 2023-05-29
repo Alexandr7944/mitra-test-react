@@ -1,10 +1,10 @@
-import { useState } from 'react'
+import { memo, useState } from 'react'
 import person from "../assets/cabinet.png";
 import { IPost } from '../interface/IPost'
 import Comments from './Comments';
 import { useNavigate } from 'react-router-dom';
 
-const Post: React.FC<PostProps> = ({ post }) => {
+const Post: React.FC<PostProps> = memo(({ post }) => {
   const [comments, setComments] = useState<boolean>(false);
   const router = useNavigate();
   
@@ -30,7 +30,7 @@ const Post: React.FC<PostProps> = ({ post }) => {
       </div>
     </div>
   )
-}
+})
 
 export default Post
 

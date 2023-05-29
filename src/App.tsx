@@ -1,9 +1,9 @@
 import './App.css';
-import About from './components/About';
+import About from './pages/About/About';
 import Header from './components/Header/Header';
 import Navbar from './components/Navbar/Navbar';
-import PostPage from './components/PostPage';
-import Posts from './components/Posts';
+import PostPage from './pages/PostPage';
+import Posts from './pages/Posts';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {

@@ -2,8 +2,8 @@ import { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { fetching } from '../API/fetching';
 import { IPerson } from '../interface/IPerson';
-import Loader from './loader/Loader';
-import Post from './Post';
+import Loader from '../components/loader/Loader';
+import Post from '../components/Post';
 import { IPost } from '../interface/IPost';
 
 const PostPage = () => {

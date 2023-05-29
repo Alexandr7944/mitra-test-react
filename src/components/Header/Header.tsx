@@ -23,6 +23,7 @@ const Header = () => {
           <span className="menu__name">Александр Васнев</span>
           <span className="menu__location">адрес: г. Сочи, пер. Васильковый, 33 "Д"</span>
         </div>
+        <h1 className="header__title">Тестовое задание</h1>
       </div>
     </div>
   )

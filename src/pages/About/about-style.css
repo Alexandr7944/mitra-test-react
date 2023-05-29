@@ -1,0 +1,29 @@
+.about__title {
+  margin: 15px;
+}
+
+.about__text {
+  line-height: 1.3;
+  text-indent: 30px;
+}
+
+.personality-list,
+.job-list {
+  margin-left: 15px;
+}
+
+.personality-item,
+.job-item {
+  margin-bottom: 15px;
+}
+
+.job-item>ul,
+.job-item>ul>li {
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+
+.job__position {
+  font-weight: bold;
+  margin-bottom: 10px;
+}

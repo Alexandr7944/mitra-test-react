@@ -15,7 +15,7 @@ const Post: React.FC<PostProps> = memo(({ post }) => {
           className='post__image'
           src={person}
           alt="person"
-          onClick={() => router(`../posts/${post.userId}`)}
+          onClick={() => router(`../mitra-test-react/posts/${post.userId}`)}
         />
         <div className="post__content">
           <h3 className="post__title">{post.title}</h3>

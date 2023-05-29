@@ -11,9 +11,9 @@ function App() {
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route path="/mitra-test-react/posts" element={<Posts/>} />
-        <Route path="/mitra-test-react/posts/:userId" element={<PostPage />} />
-        <Route path="/mitra-test-react/about" element={<About/>} />
+        <Route path="/posts" element={<Posts/>} />
+        <Route path="/posts/:userId" element={<PostPage />} />
+        <Route path="/about" element={<About/>} />
         <Route path="/*" element={<Posts/>} />
       </Routes>
     </BrowserRouter>
